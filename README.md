@@ -1,5 +1,5 @@
 # covid19-miner
-An interactive text mining tool to assist curation of Sars-CoV-2 interaction pathways
+An interactive text mining tool to assist curation of SARS-CoV-2 interaction pathways
 
 # Web project
 The web project is hosted at http://rupertoverall.net/covid19/miner
@@ -8,7 +8,7 @@ The web project is hosted at http://rupertoverall.net/covid19/miner
 To report bugs, make feature requests etc., please use the issues tracker associated with this repository.
 
 # About this tool
-This project provides access to a database of interactions between genes / proteins, chemicals and biological processes related to the SARS-Cov2 (COVID-19) virus.
+This project provides access to a database of interactions between genes / proteins, chemicals and biological processes related to the SARS-CoV-2 (COVID-19) virus.
 
 The interactions have been automatically extracted using text mining. The information shown on this site is thus not curated and is intended to be used as an aid to manual literature curation efforts.
 
@@ -36,7 +36,7 @@ It is possible to export an interesting network either as a CSV file (comma-deli
 # Mapping
 This tool is designed to allow rapid assessment of a large body of literature &mdash; it dos not aim to provide detailed and accurate interaction information. In order to better serve this aim, it was decided to collapse closely-related entities as much as possible. Specifically, all mentions of genes or gene products (RNA, proteins) are mapped to the corresponding gene identifier. In addition, genes and proteins from different organisms (or where the organism is unclear) are mapped to the homologous human gene. This means that potential interactions discovered in closely-related species will be visible when searching for interaction partners of human protein identifiers. The resulting links lead to the underlying literature and it is up to the curator to decide if and how that information fits into their curation scheme.
 
-Likewise, all viral genes/proteins will be mapped to SARS-Cov-2 identifiers. There is currently no uniform mapping scheme available for SARS-CoV-2, but we are actively working on improving this and updated interaction data will be continuously added.
+Likewise, all viral genes/proteins will be mapped to SARS-CoV-2 identifiers. There is currently no uniform mapping scheme available for SARS-CoV-2, but we are actively working on improving this and updated interaction data will be continuously added.
 
 Finally, there are many concepts (particularly biological processes) for which there are no good mappings. Where the natural language processing software has detected an entity that cannot be mapped, it will be presented in the network as plain text. Although there is no detailed metadata for such entities, they can often be informative enough to warrant a closer look at the source manuscript. Often, many separate entities with similar names will be present where they should really be collapsed into one. We are working to improve the mapping resources to remedy this problem.
 
