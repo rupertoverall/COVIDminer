@@ -5,20 +5,20 @@ An interactive text mining tool to assist curation of SARS-CoV-2 interaction pat
 The web project is hosted at http://rupertoverall.net/covid19/miner
 
 # Issues/feedback
-To report bugs, make feature requests etc., please use the issues tracker associated with this repository.
+To report bugs, make feature requests etc., please use the [issues tracker](https://github.com/rupertoverall/covid19-miner/issues) associated with this repository.
 
 # About this tool
 This project provides access to a database of interactions between genes / proteins, chemicals and biological processes related to the SARS-CoV-2 (COVID-19) virus.
 
 The interactions have been automatically extracted using text mining. The information shown on this site is thus not curated and is intended to be used as an aid to manual literature curation efforts.
 
-The data presented here are based on the CORD-19 dataset. We are also adding a daily-updated analysis of manuscripts from the bioRxiv collection "COVID-19 SARS-CoV-2 preprints from medRxiv and bioRxiv".
+The data presented here are based on the [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge#all_sources_metadata_2020-03-13.csv') dataset, around 15000 abstracts from a [broad PubMed search](https://pubmed.ncbi.nlm.nih.gov/?orig_db=pubmed&term=%22SARS-CoV%22+OR+%222019-nCoV%22+OR+%22HCoV-19%22+OR+%22Wuhan+coronavirus%22+OR+%22Wuhan+seafood+market+pneumonia+virus%22+OR+%22COVID%22), a regularly-updated analysis of full-text manuscripts from the bioRxiv collection ["COVID-19 SARS-CoV-2 preprints from medRxiv and bioRxiv"](https://connect.biorxiv.org/relate/content/181), as well as around 80 full-text manuscripts curated as part of the [COVID-19 Disease Map](https://covid.pages.uni.lu/) project.
 
 Natural language processing (text mining) is performed using the REACH (https://github.com/clulab/reach) reader together with the INDRA (http://www.indra.bio/) toolbox.
 
 This project is run by Rupert Overall (https://rupertoverall.net/, https://twitter.com/rupertoverall)
 
-Please note that this web tool is still under development and the site will change often.
+Please note that this web tool is under ongoing development and the site may change as new features are added.
 
 # Tutorial
 ## Search
@@ -34,7 +34,7 @@ The elements tab is used to show detailed information about the currently-select
 It is possible to export an interesting network either as a CSV file (comma-delimited text file that can also be opened in Excel) containing a table all of the interactions, as a JSON file describing the underlying Cytoscape.js graph, or as a screenshot of the current graph window (in PNG format).
 
 # Mapping
-This tool is designed to allow rapid assessment of a large body of literature &mdash; it dos not aim to provide detailed and accurate interaction information. In order to better serve this aim, it was decided to collapse closely-related entities as much as possible. Specifically, all mentions of genes or gene products (RNA, proteins) are mapped to the corresponding gene identifier. In addition, genes and proteins from different organisms (or where the organism is unclear) are mapped to the homologous human gene. This means that potential interactions discovered in closely-related species will be visible when searching for interaction partners of human protein identifiers. The resulting links lead to the underlying literature and it is up to the curator to decide if and how that information fits into their curation scheme.
+This tool is designed to allow **_rapid assessment of a large body of literature_** &mdash; it does not aim to provide detailed and accurate interaction information. In order to better serve this aim, it was decided to collapse closely-related entities as much as possible. Specifically, all mentions of genes or gene products (RNA, proteins) are mapped to the corresponding gene identifier. In addition, genes and proteins from different organisms (or where the organism is unclear) are mapped to the homologous human gene. This means that potential interactions discovered in closely-related species will be visible when searching for interaction partners of human protein identifiers. The resulting links lead to the underlying literature and it is up to the curator to decide if and how that information fits into their curation scheme.
 
 Likewise, all viral genes/proteins will be mapped to SARS-CoV-2 identifiers. There is currently no uniform mapping scheme available for SARS-CoV-2, but we are actively working on improving this and updated interaction data will be continuously added.
 
