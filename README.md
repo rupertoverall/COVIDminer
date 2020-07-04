@@ -1,3 +1,7 @@
+
+<img src="images/COVIDminer_logo.png" align="left" width="420px">  
+<br /><br /><br /><br /><br />
+
 # COVIDminer
 An interactive text mining tool to assist curation of SARS-CoV-2 interaction pathways
 
