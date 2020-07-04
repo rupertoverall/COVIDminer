@@ -21,7 +21,7 @@ This project is run by Rupert Overall (https://rupertoverall.net/, https://twitt
 # Tutorial
 A full tutorial can be found at https://rupertoverall.net/covidminer/tutorial
 
-# Mapping
+# Notes on mapping
 This tool is designed to allow **_rapid assessment of a large body of literature_** &mdash; it does not aim to provide detailed and accurate interaction information. In order to better serve this aim, it was decided to collapse closely-related entities as much as possible. Specifically, all mentions of genes or gene products (RNA, proteins) are mapped to the corresponding gene identifier. In addition, genes and proteins from different organisms (or where the organism is unclear) are mapped to the homologous human gene. This means that potential interactions discovered in closely-related species will be visible when searching for interaction partners of human protein identifiers. The resulting links lead to the underlying literature and it is up to the curator to decide if and how that information fits into their curation scheme.
 
 Likewise, all viral genes/proteins will be mapped to SARS-CoV-2 identifiers. There is currently no uniform mapping scheme available for SARS-CoV-2, but we are actively working on improving this and updated interaction data will be continuously added.
