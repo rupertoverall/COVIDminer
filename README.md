@@ -2,7 +2,7 @@
 An interactive text mining tool to assist curation of SARS-CoV-2 interaction pathways
 
 # Web project
-The web project is hosted at http://rupertoverall.net/covidminer
+The web project is hosted at https://rupertoverall.net/covidminer
 
 # Issues/feedback
 To report bugs, make feature requests etc., please use the [issues tracker](https://github.com/rupertoverall/COVIDminer/issues) associated with this repository.
@@ -19,7 +19,7 @@ Natural language processing (text mining) is performed using the REACH (https://
 This project is run by Rupert Overall (https://rupertoverall.net/, https://twitter.com/rupertoverall)
 
 # Tutorial
-A full tutorial can be found at http://rupertoverall.net/covidminer/tutorial
+A full tutorial can be found at https://rupertoverall.net/covidminer/tutorial
 
 # Mapping
 This tool is designed to allow **_rapid assessment of a large body of literature_** &mdash; it does not aim to provide detailed and accurate interaction information. In order to better serve this aim, it was decided to collapse closely-related entities as much as possible. Specifically, all mentions of genes or gene products (RNA, proteins) are mapped to the corresponding gene identifier. In addition, genes and proteins from different organisms (or where the organism is unclear) are mapped to the homologous human gene. This means that potential interactions discovered in closely-related species will be visible when searching for interaction partners of human protein identifiers. The resulting links lead to the underlying literature and it is up to the curator to decide if and how that information fits into their curation scheme.
